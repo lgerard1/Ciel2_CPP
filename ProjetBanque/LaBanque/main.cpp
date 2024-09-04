@@ -1,6 +1,7 @@
 #include <iostream>
 #include <menu.h>
 #include <comptebancaire.h>
+#include "compteepargne.h"
 
 using namespace std;
 
@@ -11,41 +12,41 @@ int main()
     float retrait;
     Menu menuCB("../LaBanque/compteBancaire.txt");
     CompteBancaire compte;
+    CompteEpargne epargne;
 
     do{
         choix = menuCB.Afficher();
         switch (choix)
         {
-        case OPTION_1:
-            cout << "Consulter le Solde" << endl;
-            cout << compte.ConsulterSolde() << endl;
-            Menu::AttendreAppuiTouche();
+        case 1:
+            cout << "Votre solde est de : " << endl;
+            cout << epargne.ConsulterSolde() << endl;
+
             break;
-        case OPTION_2:
+        case 2:
             cout << "Effectuer un dépot, quelle est le montant ?" << endl;
             cin >> montant;
-            compte.Deposer(montant);
-            Menu::AttendreAppuiTouche();
+            epargne.Deposer(montant);
+
             break;
-        case OPTION_3:
+        case 3:
             cout << "Effectuer un retrait, quelle est le montant ?" << endl;
             cin >> retrait;
-            if(compte.Retirer(retrait) == true){
+            if(epargne.Retirer(retrait) == true){
 
-                compte.Retirer(retrait);
+                epargne.Retirer(retrait);
             }
             else{
                 cout << "Solde insuffisant" << endl;
             }
-            Menu::AttendreAppuiTouche();
+
             break;
-        default:
-            cout << "Retour" << endl;
-            Menu::AttendreAppuiTouche();
-            break;
+        case 4:
+            epargne.CalculerTauxInteret();
         }
     }
-    while (choix != QUITTER);
+    while (choix != 5);
+
 
 
 

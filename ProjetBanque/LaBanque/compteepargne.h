@@ -7,7 +7,7 @@
 class CompteEpargne : public CompteBancaire
 {
 public:
-    CompteEpargne(const float _solde = 0, const float _tauxInteret);
+    CompteEpargne(const float _tauxInteret = 3, const float _solde = 0);
     void CalculerTauxInteret();
     void ModifierTaux(const float _nouveauxTaux);
 private :

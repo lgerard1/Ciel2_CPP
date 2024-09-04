@@ -9,12 +9,6 @@
 
 using namespace std;
 
-enum CHOIX_MENU{
-    OPTION_1 = 1,
-    OPTION_2,
-    OPTION_3,
-    QUITTER
-};
 
 class Menu
 {
