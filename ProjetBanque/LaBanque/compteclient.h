@@ -1,8 +1,23 @@
 #ifndef COMPTECLIENT_H
 #define COMPTECLIENT_H
+
 #include <string>
 #include "comptebancaire.h"
 #include "compteepargne.h"
+#include <algorithm>
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <limits>
+
+/**
+ * @brief CompteEpargne::CompteEpargne
+ * @abstract Classe pour gérer un compte epargne
+ * @version 1.1 (modification accès attribut)
+ */
+
+
+using namespace std;
 
 class CompteClient
 {
@@ -16,8 +31,8 @@ public:
 private:
     string nom;
     int numero;
-    bancaire *CompteBancaire;
-    epargne *CompteEpargne;
+    CompteBancaire *Bancaire;
+    CompteEpargne *Epargne;
 };
 
 #endif // COMPTECLIENT_H

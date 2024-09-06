@@ -62,7 +62,9 @@ OBJECTS       = comptebancaire.o \
 		compteepargne.o \
 		main.o \
 		menu.o
-DIST          = ../LaBanque/compteBancaire.txt \
+DIST          = ../LaBanque/client.txt \
+		../LaBanque/compteBancaire.txt \
+		../LaBanque/compteEpargne.txt \
 		/opt/Qt/6.7.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.7.1/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt/6.7.1/gcc_64/mkspecs/common/linux.conf \
@@ -1141,7 +1143,8 @@ comptebancaire.o: ../LaBanque/comptebancaire.cpp ../LaBanque/comptebancaire.h
 
 compteclient.o: ../LaBanque/compteclient.cpp ../LaBanque/compteclient.h \
 		../LaBanque/comptebancaire.h \
-		../LaBanque/compteepargne.h
+		../LaBanque/compteepargne.h \
+		../LaBanque/menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o compteclient.o ../LaBanque/compteclient.cpp
 
 compteepargne.o: ../LaBanque/compteepargne.cpp ../LaBanque/compteepargne.h \

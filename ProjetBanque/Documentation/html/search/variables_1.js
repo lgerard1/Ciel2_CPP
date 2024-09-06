@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['longueurmax_50',['longueurMax',['../class_menu.html#a745c540589015b573d8214e1080e2a8e',1,'Menu']]]
+  ['code_75',['code',['../class_exception.html#a9a71c9fe2c765fc8dd0f7e97a20b636b',1,'Exception']]]
 ];

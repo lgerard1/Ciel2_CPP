@@ -2,53 +2,32 @@
 #include <menu.h>
 #include <comptebancaire.h>
 #include "compteepargne.h"
+#include "compteclient.h"
 
 using namespace std;
 
 int main()
 {
     int choix;
-    float montant;
-    float retrait;
-    Menu menuCB("../LaBanque/compteBancaire.txt");
-    CompteBancaire compte;
-    CompteEpargne epargne;
-
+    Menu menuEpargne("../LaBanque/client.txt");
+    CompteClient leCompte("ALbert", 1);
     do{
-        choix = menuCB.Afficher();
+        choix = menuEpargne.Afficher();
         switch (choix)
         {
         case 1:
-            cout << "Votre solde est de : " << endl;
-            cout << epargne.ConsulterSolde() << endl;
-
+            leCompte.OuvrirCompteEpargne();
             break;
+
         case 2:
-            cout << "Effectuer un dépot, quelle est le montant ?" << endl;
-            cin >> montant;
-            epargne.Deposer(montant);
+            leCompte.GererCompteBancaire();
 
             break;
         case 3:
-            cout << "Effectuer un retrait, quelle est le montant ?" << endl;
-            cin >> retrait;
-            if(epargne.Retirer(retrait) == true){
-
-                epargne.Retirer(retrait);
-            }
-            else{
-                cout << "Solde insuffisant" << endl;
-            }
-
+            leCompte.GererCompteEpargne();
             break;
-        case 4:
-            epargne.CalculerTauxInteret();
         }
-    }
-    while (choix != 5);
-
-
-
+    }while (choix != 4);
 
     return 0;
 }

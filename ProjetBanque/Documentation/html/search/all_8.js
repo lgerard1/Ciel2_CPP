@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['quitter_25',['QUITTER',['../menu_8h.html#a0cbb52dc1d0afc5cefd1b58a2a7bc167a8e639928892ca56805cccf6606dcff63',1,'menu.h']]]
+  ['nboptions_28',['nbOptions',['../class_menu.html#ad59953635d184fefcddf95015a761187',1,'Menu']]],
+  ['nom_29',['nom',['../class_compte_client.html#ae9ef0acc1788bab0760844d206f40e83',1,'CompteClient::nom()'],['../class_menu.html#a99574cb51606811f697854859bc1ccc1',1,'Menu::nom()']]],
+  ['numero_30',['numero',['../class_compte_client.html#abc57c189dfbd75697f3c385076cdfc84',1,'CompteClient']]]
 ];

@@ -17,4 +17,6 @@ HEADERS += \
     menu.h
 
 DISTFILES += \
-    compteBancaire.txt
+    client.txt \
+    compteBancaire.txt \
+    compteEpargne.txt
