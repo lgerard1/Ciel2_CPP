@@ -11,8 +11,8 @@
 #include <limits>
 
 /**
- * @brief CompteEpargne::CompteEpargne
- * @abstract Classe pour gérer un compte epargne
+ * @brief CompteCLient::CompteClient
+ * @abstract Classe pour gérer un compte client, un compte bancaire et un compte epargne
  * @version 1.1 (modification accès attribut)
  */
 

@@ -1,6 +1,13 @@
 #include "compteclient.h"
 #include "menu.h"
 
+
+/**
+ * @brief CompteClient::CompteClient
+ * @param _nom
+ * @param _numero
+ * @details Constructeur de la classe CompteClient
+ */
 CompteClient::CompteClient(const string _nom, const int _numero):
     nom(_nom),
     numero(_numero)
@@ -8,6 +15,10 @@ CompteClient::CompteClient(const string _nom, const int _numero):
     Epargne = nullptr;
     Bancaire = new CompteBancaire(0);
 }
+/**
+ * @brief CompteClient::~CompteClient
+ * @details Destructeur de la classe CompteClient
+ */
 
 CompteClient::~CompteClient()
 {
@@ -16,6 +27,11 @@ CompteClient::~CompteClient()
         delete Epargne;
     }
 }
+
+/**
+ * @brief CompteClient::OuvrirCompteEpargne
+ * @details Méthode permettant d'ouvrir un compte épargne
+ */
 
 void CompteClient::OuvrirCompteEpargne()
 {
@@ -32,6 +48,11 @@ void CompteClient::OuvrirCompteEpargne()
         Epargne = new CompteEpargne(taux, soldeDepart);
     }
 }
+
+/**
+ * @brief CompteClient::GererCompteBancaire
+ * @details Méthode permettant de gérer un compte bancaire déjà existant
+ */
 
 void CompteClient::GererCompteBancaire()
 {
@@ -74,6 +95,11 @@ void CompteClient::GererCompteBancaire()
         Menu::AttendreAppuiTouche();
     }
 }
+
+/**
+ * @brief CompteClient::GererCompteEpargne
+ * @details Méthode permettant de gérer le compte epargne déjà existant
+ */
 
 void CompteClient::GererCompteEpargne()
 {

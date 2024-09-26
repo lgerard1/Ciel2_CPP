@@ -13,7 +13,7 @@ void Segment::Afficher()
 {
     cout << "(" << numero << ") " << "SEGMENT L = ";
     cout << setw(6) << left <<  longueur << "A = " << angle;
-    cout <<   "V = " << setw(6) << vitesse << endl;
+    cout << right << setw(6) << "V = " << vitesse << endl;
 }
 
 double Segment::ObtenirLongueur()

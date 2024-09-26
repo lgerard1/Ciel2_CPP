@@ -7,8 +7,11 @@
 #include <fstream>
 #include <iomanip>
 #include <limits>
+
 /**
- * @brief The CompteEpargne class
+ * @brief CompteEpargne::CompteEpargne
+ * @abstract Classe pour gérer un compte epargne
+ * @version 1.1 (modification accès attribut)
  */
 
 using namespace std;
