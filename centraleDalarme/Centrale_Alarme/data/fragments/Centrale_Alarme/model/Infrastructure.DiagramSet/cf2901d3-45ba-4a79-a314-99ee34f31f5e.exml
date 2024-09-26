@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Centrale_Alarme" version="4">
+  <OBJECT>
+    <ID name="Centrale_Alarme" mc="Infrastructure.DiagramSet" uid="cf2901d3-45ba-4a79-a314-99ee34f31f5e"/>
+    <PID name="Centrale_Alarme" mc="Standard.Project" uid="b05f0501-5eb2-48ea-bf5d-521ec8e65726"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Centrale_Alarme]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

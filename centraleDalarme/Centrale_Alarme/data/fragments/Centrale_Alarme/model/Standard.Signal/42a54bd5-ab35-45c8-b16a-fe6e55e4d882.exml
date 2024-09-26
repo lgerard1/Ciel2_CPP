@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PRESENCE_PROPRIETAIRE" version="4">
+  <OBJECT>
+    <ID name="PRESENCE_PROPRIETAIRE" mc="Standard.Signal" uid="42a54bd5-ab35-45c8-b16a-fe6e55e4d882"/>
+    <PID name="DetecteurTemporise" mc="Standard.Class" uid="d067f0cb-f9f2-4aaf-9466-4223c4c764f7"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[PRESENCE_PROPRIETAIRE]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

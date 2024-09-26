@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Surveillerles locaux" version="4">
+  <OBJECT>
+    <ID name="Surveillerles locaux" mc="Standard.Interaction" uid="b356fb5d-1f01-4b6f-aee1-74cbcf5f36db"/>
+    <PID name="Surveiller les locaux" mc="Standard.UseCase" uid="d96b0a8e-6a1a-4ee6-a171-4402f4185ec5"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Surveillerles locaux]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Standard.Collaboration" uid="41039dbf-ea81-4d2e-b797-e9970af380c7"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de séquence Interaction" mc="Standard.SequenceDiagram" uid="e9bee883-1d8f-4a96-80d1-9c8185124b5a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

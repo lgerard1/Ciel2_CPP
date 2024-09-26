@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="5_SECONDES_ECOULEES" version="4">
+  <OBJECT>
+    <ID name="5_SECONDES_ECOULEES" mc="Standard.Signal" uid="0756aad4-569f-4df6-9e9d-b3c0f306f3dd"/>
+    <PID name="Clavier" mc="Standard.Class" uid="e2469c02-6e3e-4eaf-b600-8596b18cd733"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[5_SECONDES_ECOULEES]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

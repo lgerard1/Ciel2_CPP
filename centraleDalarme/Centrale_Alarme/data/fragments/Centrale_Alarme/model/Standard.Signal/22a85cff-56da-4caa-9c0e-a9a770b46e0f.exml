@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SAISIE_NOUVEAU" version="4">
+  <OBJECT>
+    <ID name="SAISIE_NOUVEAU" mc="Standard.Signal" uid="22a85cff-56da-4caa-9c0e-a9a770b46e0f"/>
+    <PID name="CentraleDalarme" mc="Standard.Class" uid="3fa8f4a4-3030-4881-b002-a65f4db32c7c"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SAISIE_NOUVEAU]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

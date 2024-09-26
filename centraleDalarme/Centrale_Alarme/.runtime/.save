@@ -1,0 +1,7 @@
+#Tue Sep 24 12:01:12 CEST 2024
+org.modelio.app.diagram.editor.OpenedDiagrams0='Diagramme d'\u00E9tat State Machine' {e5968847-8dc6-46d4-8a6f-f7c9106cd930} Standard.StateMachineDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams3='Diagramme de s\u00E9quence Interaction' {72366015-e65c-43ea-8187-83ef49b406c3} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams4='Diagramme de s\u00E9quence Interaction' {e9bee883-1d8f-4a96-80d1-9c8185124b5a} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Diagramme de cas d'utilisation centrale_alarme' {d1c82a57-7154-4154-b731-8f75ee5ceac4} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Diagramme de s\u00E9quence Interaction' {cde1d387-10cc-43c0-ad23-910cabbf3ed5} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams5='Diagramme de classe centrale_alarme' {ebcca497-34c6-4cd0-9fed-b11092810a81} Standard.ClassDiagram

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme de séquence Interaction" version="4">
+  <OBJECT>
+    <ID name="Diagramme de séquence Interaction" mc="Standard.SequenceDiagram" uid="e9bee883-1d8f-4a96-80d1-9c8185124b5a"/>
+    <PID name="Surveillerles locaux" mc="Standard.Interaction" uid="b356fb5d-1f01-4b6f-aee1-74cbcf5f36db"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">1</ATT>
+      <ATT name="UiData"><![CDATA[eJztU9tO20AQ/ZWV37OJIVSOZILARlGES1DSIvUJjb1DunQv6e4akk/iO/pjXWMHSGgiV0LlpU+7mtkz58zsmfhkKQW5R2O5VsdBSHsBORnGk/wOC0c486GAuNUCjwNt5lRqhoJrWkpBLf4sURXIOMwNSOovThuKAiUqZ9/kR3LWRNI6EhAJd9rcPLP3gmF8ZfQCjVsRBdKTCljp0qXgwOeuQZTYqFGlEEF3GHfXgDfQmVsJDDZ6OfhTL2t9tnpvaaEN0hrbQl8CtgCGbE12vnRTvG3JculLNEiCS5fmY6/x6VpdEp2DcFs9dutu9vVtUIBD5mVsjexzFSL3VaSaDigGhtGtTyE4yBGj6LATsui204fBp07UY2FnUERhdBQe9PMj2D94AdZdKP2gMshRbImYOcPVPBg2dBIJQ2J/PdYiyFg5NFA4P++4+4Tb26oWOFaJlgtteYXZQdaiVPKdC2awqpBxWw24OXYiMq5+2PbPz+apgQcvJ4MVmk1fHu7z5fNCsRpvqagq+H3aKPhvlunvUB9uRc522W9Es9Nv59Obs9PkYjSdfL1M38ckLRb09be9GOiVHfr/7fBRdvgyuXpvH+xM/QY7OZ1X]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABHNCSVQICAgIfAhkiAAAACNJREFUOI1j/P///38GKgMmahs4auiooaOGjho6auiooVQCAFkwBCaD6blRAAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="JsStructure"></ATT>
+      <ATT name="Name"><![CDATA[Diagramme de séquence Interaction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="f9c05b96-3614-461a-8d31-10c1b7d6bbad"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
