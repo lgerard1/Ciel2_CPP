@@ -74,6 +74,7 @@ public:
 
         pushButtonNouveau = new QPushButton(groupBox);
         pushButtonNouveau->setObjectName("pushButtonNouveau");
+        pushButtonNouveau->setEnabled(true);
 
         gridLayout->addWidget(pushButtonNouveau, 4, 0, 1, 2);
 
@@ -144,6 +145,7 @@ public:
 
 
         retranslateUi(TestGestionDuStock);
+        QObject::connect(pushButtonQuitter, &QPushButton::clicked, TestGestionDuStock, qOverload<>(&QWidget::close));
 
         QMetaObject::connectSlotsByName(TestGestionDuStock);
     } // setupUi

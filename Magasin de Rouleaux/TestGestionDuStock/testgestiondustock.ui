@@ -51,6 +51,9 @@
        </item>
        <item row="4" column="0" colspan="2">
         <widget class="QPushButton" name="pushButtonNouveau">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="text">
           <string>Ajouter un nouveau</string>
          </property>
@@ -141,5 +144,22 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonQuitter</sender>
+   <signal>clicked()</signal>
+   <receiver>TestGestionDuStock</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -4,8 +4,9 @@
 #include "rouleau.h"
 #include <QMultiMap>
 #include <QDebug>
+#include <QObject>
 
-class Stock
+class Stock : public QObject
 {
 public:
     Stock();
