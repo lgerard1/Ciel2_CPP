@@ -37,3 +37,15 @@ Magasin::~Magasin()
 {
     delete ui;
 }
+
+void Magasin::on_pushButtonNouveau_clicked()
+{
+
+}
+
+
+void Magasin::on_pushButtonRetrait_clicked()
+{
+
+}
+

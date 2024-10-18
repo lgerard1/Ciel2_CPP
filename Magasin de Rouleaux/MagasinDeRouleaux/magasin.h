@@ -23,6 +23,11 @@ public:
     void AfficherRouleauEnceinte(const Rouleau _rouleau);
     ~Magasin();
 
+private slots:
+    void on_pushButtonNouveau_clicked();
+
+    void on_pushButtonRetrait_clicked();
+
 private:
     Ui::Magasin *ui;
     AlveolesLibres lesAlveoles;
