@@ -1,6 +1,7 @@
 #ifndef CHARIOT_H
 #define CHARIOT_H
 #include <QObject>
+#include <QMessageBox>
 
 class Chariot : public QObject
 {

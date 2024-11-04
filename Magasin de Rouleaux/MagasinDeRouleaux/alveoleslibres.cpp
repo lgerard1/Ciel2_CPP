@@ -29,11 +29,11 @@ bool AlveolesLibres::Reserver(int &_rangee, int &_colonne)
 
 void AlveolesLibres::Liberer(const int _rangee, const int _colonne)
 {
-    int numAlveole;
-    numAlveole = (_rangee - 1) * nbColonnes + _colonne;
+    int numAlveole = (_rangee - 1) * nbColonnes + _colonne;
     if (!contains(numAlveole)) {
         push(numAlveole);
     }
 
-    qDebug() << "Dans la méthode Libérer : "<< *this;
+    qDebug() << "Alvéole libérée : Rangée =" << _rangee << ", Colonne =" << _colonne;
 }
+

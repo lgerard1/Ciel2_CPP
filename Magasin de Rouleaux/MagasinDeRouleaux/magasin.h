@@ -20,6 +20,7 @@ class Magasin : public QWidget
 public:
     Magasin(QWidget *parent = nullptr);
     void AfficherStock();
+    void extracted(int &rangee, int &colonne);
     void AfficherRouleauEnceinte(const Rouleau _rouleau);
     ~Magasin();
 
@@ -34,6 +35,9 @@ private:
     Chariot leChariot;
     Stock leStock;
     int nbRouleau;
+    Rouleau lesRouleaux;
     QMultiMap<int,Rouleau>::iterator debut;
+    int rangee;
+    int colonne;
 };
 #endif // MAGASIN_H

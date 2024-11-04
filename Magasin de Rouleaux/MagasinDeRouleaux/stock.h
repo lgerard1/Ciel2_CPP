@@ -15,7 +15,7 @@ public:
     bool RetirerRouleauDuStock(const QMultiMap<int,Rouleau>::iterator &_positionRouleau);
     QStringList ObtenirContenuDuStock() const;
 
-private :
+public :
     QMultiMap<int,Rouleau> lesRouleaux;
 
 };

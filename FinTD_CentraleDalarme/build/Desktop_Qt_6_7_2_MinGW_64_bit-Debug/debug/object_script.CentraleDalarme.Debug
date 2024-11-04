@@ -1,0 +1,13 @@
+debug/main.o
+debug/clavier.o
+debug/detecteur.o
+debug/centraledalarme.o
+debug/Code.o
+debug/detecteurtemporise.o
+debug/sirene.o
+debug/moc_clavier.o
+debug/moc_detecteur.o
+debug/moc_centraledalarme.o
+debug/moc_Code.o
+debug/moc_detecteurtemporise.o
+debug/moc_sirene.o

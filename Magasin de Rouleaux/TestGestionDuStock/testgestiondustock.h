@@ -4,6 +4,8 @@
 #include <QWidget>
 #include "stock.h"
 #include "rouleau.h"
+#include <QFile>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,6 +27,10 @@ private slots:
     void on_pushButtonRetrait_clicked();
 
     void on_pushButtonSupprimer_clicked();
+
+    void on_pushButtonEnregistrer_clicked();
+
+    void on_pushButtonRecuperer_clicked();
 
 private:
     Ui::TestGestionDuStock *ui;
