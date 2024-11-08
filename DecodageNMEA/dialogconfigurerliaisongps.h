@@ -8,6 +8,10 @@
 #include <QSerialPortInfo>
 #include <QPushButton>
 #include <QDebug>
+#include <QSettings>
+#include <QDir>
+#include <QSize>
+#include <QPoint>
 
 namespace Ui {
 class DialogConfigurerLiaisonGPS;

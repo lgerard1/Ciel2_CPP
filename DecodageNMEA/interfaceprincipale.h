@@ -7,6 +7,10 @@
 #include <QSerialPortInfo>
 #include <QDebug>
 #include <QLabel>
+#include <QSettings>
+#include <QDir>
+#include <QSize>
+#include <QPoint>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
