@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Noël</title>
+    <!-- Bootstrap CSS -->
+    <script src="js/libs/jquery/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="challenge.css" rel="stylesheet" type="text/css"/>
+    <script src="Challenge.js"></script>
+</head>
+<body>
+    <!-- Interface de Connexion -->
+    <div id="connexion-interface" class="vh-100 d-flex justify-content-center align-items-center bg-noel">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-8 col-10">
+                    <div class="card shadow-lg bg-light border-0">
+                        <div class="card-body text-center">
+                            <h3 class="card-title text-danger mb-4">Connexion au Jeu de Noël</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="pseudo" class="form-label text-success">Pseudo du joueur</label>
+                                    <input type="text" id="pseudo" class="form-control" placeholder="Entrez votre pseudo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ip-serveur" class="form-label text-success">Adresse IP du serveur</label>
+                                    <input type="text" id="ip-serveur" class="form-control" placeholder="Adresse IP" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="port-serveur" class="form-label text-success">Port du serveur</label>
+                                    <input type="number" id="port-serveur" min="1024" value="1024" max="9999" class="form-control" placeholder="Port" required>
+                                </div>
+                                <button type="button" id="btn-connexion" class="btn btn-danger w-100">Connexion</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interface de Jeu -->
+    <div id="jeu-interface" class="vh-100 d-none bg-jeu">
+        <div class="container">
+            <div class="row text-center my-4">
+                <h1 class="text-white">Bienvenue dans le Jeu de Noël 🎄</h1>
+            </div>
+            <div class="row contient">
+                <div class="col-md-6 offset-md-3">
+                    <!-- Emplacement pour une image festive -->
+                    <img src="noel-jeu.png" alt="Jeu de Noël" class="img-fluid mb-3">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nom-personnage" class="form-label text-success">Nom du personnage</label>
+                            <input type="text" id="nom-personnage" class="form-control" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-success">Message</label>
+                            <input type="text" id="message" class="form-control" placeholder="Écrivez un mot...">
+                        </div>
+                        <button type="button" id="btn-envoyer" class="btn btn-danger w-100">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <p class="text-white">Manches restantes : <span id="compteur-manches" class="fw-bold text-warning">4</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    
+</body>
+</html>
