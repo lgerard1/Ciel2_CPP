@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Page de Connexion</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/attributionPersonnage.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Challenge.css" rel="stylesheet" type="text/css"/>
+
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="Challenge.js"></script>
+
+
+    </head>
+    <body>
+   <!--     <div id="testeur" style="position: fixed; top: 30px; left: 50px;">change</div>-->
+        <div id="premier" >
+            <fieldset >
+                <div class="container">
+                    <div class="inputConnection">
+                        <h1>Se Connecter</h1>
+                        <input id="pseudo" placeholder="Tapez votre pseudo ici" required="">
+                        <br/>
+                        <input id="adresseIP" value="172.18.58." pattern="^(\d{1,3}\.){3}\d{1,3}$" placeholder="Tapez l'adresse IP du serveur ici" required="">
+                        <br/>
+                        <input type="number" min="1024" value="2024" max="99999" id="port" placeholder="Tapez votre port ici" required="">
+                        <br/>
+                        <div class="boutons">
+                            <button type="submit" id="connect">Connecter</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        
+
+        <div id="deux">
+            <div class="contient">
+                <h1 class="display-4 text-center">Gartic Noël</h1>
+                <div class="contientPerso">
+                    <label for="nomPerso" class="form-label" id="ancienMot">Nom du personnage : </label>
+                    <input type="text" id="nomPerso" class="form-control">
+                </div>
+                <form id="motPersonnage" class="text-center">
+                    <input type="text" id="motPerso" class="form-control mb-3" placeholder="Mot sur le personnage..." required="">
+                </form>
+                <button id="envoyerMot">Envoyer</button>
+                <p class="text-center text-white mt-3">Tour restants : <span id="nbTour">4</span></p>
+            </div>
+            <button id="disconnect" class="deco" disabled>Déconnecter</button>
+        </div>
+        <audio controls="" autoplay="" loop="" class="boutonPlay">
+            <source src="vive_le_vent_instr.mp3" type="audio/mp3">
+        </audio>
+    </body>
+</html>

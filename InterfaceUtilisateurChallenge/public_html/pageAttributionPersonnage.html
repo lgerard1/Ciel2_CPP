@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Attribution Personnage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/attributionPersonnage.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="contient container">
+            <h1 class="display-4 text-center">Gartic Noël</h1>
+            <div class="contientPerso">
+                <p id="nomPerso">Nom du personnage : </p>
+            </div>
+            <form id="motPersonnage" class="text-center">
+                <input type="text" id="motPerso" class="form-control mb-3" placeholder="Mot sur le personnage..." required="">
+                <button>Envoyer</button>
+            </form>
+            <div id="nbTour" class="text-center mt-3">Tour : 1 / 4</div>
+            <audio controls loop autoplay class="boutonPlay">
+                <source src="jingle-bells-swinging-jazz-version-273940.mp3" type="audio/mpeg">
+                <source src="jingle-bells-swinging-jazz-version-273940.ogg" type="audio/ogg">
+            </audio>
+            <button id="disconnect">Se Déconnecter</button>
+            
+        </div>
+        <div>
+            
+        </div>
+    </body>
+</html>
