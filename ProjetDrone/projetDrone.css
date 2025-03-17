@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 15 mars 2025, 10:39:34
+    Author     : DELANOE Sonia
+*/
+body{
+    text-align: center;
+    margin: 20px;
+    background-color: #eaeaea;
+    font-family: okaso;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+form{
+    padding: 10px;
+}
