@@ -25,7 +25,7 @@ public:
 
 private slots:
     void on_pushButtonLaunchWeb_clicked();
-    void onQTcpSocket_NewConnection();
+    void onQTcpServer_NewConnection();
     void onQTcpSocket_Connected();
     void onQTcpSocket_Disconnected();
     void onQTcpSocket_ReadyRead();
@@ -38,5 +38,8 @@ private:
     QHttpServerResponse handleHttpRequest(const QHttpServerRequest &request);
     QTcpServer *socketEcouteServeur;
     QTcpSocket *socketDialogueClient;
+    QByteArray ancienneCommande;
+    QByteArray jsonData;
+    long int cpt;
 };
 #endif // WIDGET_H
