@@ -38,6 +38,20 @@ Widget::Widget(QWidget *parent)
     connect(resetTimer, &QTimer::timeout, this, &Widget::resetCommandes);
     resetTimer->start(360000); // 1 heure = 3600000 ms
 
+    const quint16 portHttp = 8080;
+    if (serveurHttp.listen(QHostAddress::Any, portHttp)) {
+        qDebug() << "Serveur HTTP lancé automatiquement sur le port" << portHttp;
+    } else {
+        qDebug() << "Échec du lancement automatique du serveur HTTP sur le port" << portHttp;
+    }
+
+    // Lancement automatique du serveur TCP sur le port 8081
+    const quint16 portTcp = 8081;
+    if (socketEcouteServeur->listen(QHostAddress::Any, portTcp)) {
+        qDebug() << "Serveur TCP lancé automatiquement sur le port" << portTcp;
+    } else {
+        qDebug() << "Échec du lancement automatique du serveur TCP sur le port" << portTcp;
+    }
 }
 
 Widget::~Widget()
@@ -157,19 +171,19 @@ bool Widget::insererDansBaseDeDonnees(const QJsonObject &json) {
 
 void Widget::on_pushButtonLaunchWeb_clicked()
 {
-    // Lance le serveur HTTP
-    if (serveurHttp.listen(QHostAddress::Any, ui->spinBoxPortHttp->value())) {
-        qDebug() << "Lancement du serveur HTTP sur le port" << ui->spinBoxPortHttp->value();
-    } else {
-        qDebug() << "Problème de lancement du serveur HTTP sur le port" << ui->spinBoxPortHttp->value();
-    }
+    // // Lance le serveur HTTP
+    // if (serveurHttp.listen(QHostAddress::Any, ui->spinBoxPortHttp->value())) {
+    //     qDebug() << "Lancement du serveur HTTP sur le port" << ui->spinBoxPortHttp->value();
+    // } else {
+    //     qDebug() << "Problème de lancement du serveur HTTP sur le port" << ui->spinBoxPortHttp->value();
+    // }
 
-    // Lance le serveur TCP
-    if (socketEcouteServeur->listen(QHostAddress::Any, ui->spinBoxPortTCP->value())) {
-        qDebug() << "Lancement du serveur TCP sur le port" << ui->spinBoxPortTCP->value();
-    } else {
-        qDebug() << "Problème de lancement du serveur TCP sur le port" << ui->spinBoxPortTCP->value();
-    }
+    // // Lance le serveur TCP
+    // if (socketEcouteServeur->listen(QHostAddress::Any, ui->spinBoxPortTCP->value())) {
+    //     qDebug() << "Lancement du serveur TCP sur le port" << ui->spinBoxPortTCP->value();
+    // } else {
+    //     qDebug() << "Problème de lancement du serveur TCP sur le port" << ui->spinBoxPortTCP->value();
+    // }
 }
 
 void Widget::onQTcpServer_NewConnection()

@@ -31,13 +31,6 @@
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QPushButton" name="pushButtonLaunchWeb">
-         <property name="text">
-          <string>Lancer serveur web</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </item>
      <item>
