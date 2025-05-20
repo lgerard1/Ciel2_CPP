@@ -13,6 +13,9 @@
 #include <QSqlError>
 #include <QJsonArray>
 #include <QTimer>
+#include <QFile>
+#include <QDebug>
+#include <QTextStream>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -27,7 +30,6 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-
 
 private slots:
     void on_pushButtonLaunchWeb_clicked();
@@ -57,4 +59,5 @@ private:
     QSqlDatabase db;
     QTimer *resetTimer;
 };
+
 #endif // WIDGET_H

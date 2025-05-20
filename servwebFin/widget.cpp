@@ -65,7 +65,7 @@ void Widget::resetCommandes()
     ancienneCommande.clear(); // vide les anciennes données
     ui->textEditLog->clear();
     ui->textEditLog->append("Remise à zéro des commandes.");
-    qDebug() << "Commandes réinitialisées après 1 heure.";
+    //qDebug() << "Commandes réinitialisées après 1 heure.";
 }
 
 // bool Widget::insererDansBaseDeDonnees(const QJsonObject &json) {
@@ -124,7 +124,7 @@ bool Widget::insererDansBaseDeDonnees(const QJsonObject &json) {
     bool dureeOk;
     int duree = json["Duree"].toString().toInt(&dureeOk);
     if (!dureeOk) {
-        qDebug() << "Erreur de conversion de la durée";
+        //qDebug() << "Erreur de conversion de la durée";
         return false;
     }
 
@@ -191,7 +191,7 @@ void Widget::onQTcpServer_NewConnection()
     // Récupère la nouvelle connexion TCP
     QTcpSocket *newClient = socketEcouteServeur->nextPendingConnection();
     if (newClient) {
-        qDebug() << "Client TCP connecté : " << newClient->peerAddress().toString() << ":" << newClient->peerPort();
+        //qDebug() << "Client TCP connecté : " << newClient->peerAddress().toString() << ":" << newClient->peerPort();
         socketDialogueClient = newClient;
 
         connect(newClient, &QTcpSocket::connected, this, &Widget::onQTcpSocket_Connected);
@@ -199,18 +199,18 @@ void Widget::onQTcpServer_NewConnection()
         connect(newClient, &QTcpSocket::readyRead, this, &Widget::onQTcpSocket_ReadyRead);
         connect(newClient, &QTcpSocket::errorOccurred, this, &Widget::onQTcpSocket_ErrorOccurred);
     } else {
-        qDebug() << "Aucun client TCP connecté.";
+        //qDebug() << "Aucun client TCP connecté.";
     }
 }
 
 void Widget::onQTcpSocket_Connected()
 {
-    qDebug() << "Connexion TCP établie.";
+    //qDebug() << "Connexion TCP établie.";
 }
 
 void Widget::onQTcpSocket_Disconnected()
 {
-    qDebug() << "Client TCP déconnecté.";
+    //qDebug() << "Client TCP déconnecté.";
 }
 
 void Widget::onQTcpSocket_ReadyRead()
@@ -219,7 +219,7 @@ void Widget::onQTcpSocket_ReadyRead()
     QByteArray data = socketDialogueClient->readAll();
     QString command = QString::fromUtf8(data).trimmed();
 
-    qDebug() << "Commande TCP reçue : " << command;
+    //qDebug() << "Commande TCP reçue : " << command;
 
     processTcpCommand(command);
 }
@@ -280,7 +280,7 @@ QHttpServerResponse Widget::handleHttpRequest(const QHttpServerRequest &request)
         jsonData = jsonDoc.toJson(QJsonDocument::Compact);
         insererDansBaseDeDonnees(json);
 
-        qDebug() << "Requête GET reçue : " << jsonData;
+        //qDebug() << "Requête GET reçue : " << jsonData;
 
         if (!jsonPresqueEgal(jsonData, ancienneCommande, 4.0)) {
             cpt++;
@@ -288,13 +288,13 @@ QHttpServerResponse Widget::handleHttpRequest(const QHttpServerRequest &request)
             if (socketDialogueClient && socketDialogueClient->isOpen()) {
                 socketDialogueClient->write(jsonData + "\n");
                 socketDialogueClient->flush();
-                qDebug() << "Données envoyées au client TCP.";
+                //qDebug() << "Données envoyées au client TCP.";
                 ancienneCommande = jsonData;
             } else {
-                qDebug() << "Aucun client TCP connecté.";
+                //qDebug() << "Aucun client TCP connecté.";
             }
         } else {
-            qDebug() << "Commande similaire (delta <= 4), rien à envoyer.";
+            //qDebug() << "Commande similaire (delta <= 4), rien à envoyer.";
         }
 
         return QHttpServerResponse(jsonData, "application/json");
