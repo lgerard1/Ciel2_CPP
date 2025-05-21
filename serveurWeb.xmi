@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmi:XMI xmlns="http://www.omg.org/spec/UML/20090901" xmlns:xmi="http://www.omg.org/spec/XMI/20090601">
+  <Model xmi:type="uml:Model" xmi:id="model1" name="serveurWeb">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="interaction1" name="serveurWebSequence">
+      <lifeline xmi:id="clientTcp" name="ClientTCP"/>
+      <lifeline xmi:id="clientHttp" name="ClientHTTP"/>
+      <lifeline xmi:id="widget" name="Widget"/>
+      <lifeline xmi:id="socket" name="QTcpSocket"/>
+      <lifeline xmi:id="http" name="QHttpServer"/>
+      <lifeline xmi:id="db" name="BaseDeDonnees"/>
+      <lifeline xmi:id="ui" name="UI"/>
+      <message xmi:id="msg1" name="Démarrage application"/>
+      <message xmi:id="msg2" name="listen(8081)"/>
+      <message xmi:id="msg3" name="listen(8080)"/>
+      <message xmi:id="msg4" name="db.open()"/>
+      <message xmi:id="msg5" name="Connexion TCP"/>
+      <message xmi:id="msg6" name="onQTcpServer_NewConnection()"/>
+      <message xmi:id="msg7" name="GET_CLASSES"/>
+      <message xmi:id="msg8" name="processTcpCommand()"/>
+      <message xmi:id="msg9" name="SELECT CLASSES"/>
+      <message xmi:id="msg10" name="GET /?params..."/>
+      <message xmi:id="msg11" name="handleHttpRequest()"/>
+      <message xmi:id="msg12" name="INSERT SIMULATION"/>
+      <message xmi:id="msg13" name="INSERT SCENARIO"/>
+      <message xmi:id="msg14" name="INSERT DRONES"/>
+      <message xmi:id="msg15" name="write(jsonData)"/>
+    </packagedElement>
+  </Model>
+</xmi:XMI>
