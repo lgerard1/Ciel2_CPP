@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche par Code Postal</title>
+</head>
+<body>
+    <h2>Recherche par Code Postal</h2>
+    <form action="PHP/traitement.php" method="post">
+        <label for="code_postal">Entrez le code postal :</label><br>
+        <input type="text" id="code_postal" name="code_postal" pattern="[0-9]{5}" title="Code Postal" required><br><br>
+        <button type="submit">Rechercher</button>
+    </form>
+</body>
+</html>
