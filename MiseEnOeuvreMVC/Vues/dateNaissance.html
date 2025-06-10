@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Modification date de Naissance</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="dateNaissance.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <h1 class="col-11">Modification Date de Naissance</h1>  
+                <button type="button" class="btn btn-primary col-1 mb-3 fs-1" id="retour">&#127968;</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <select id="utilisateur" class="form-select">
+                        <option selected="">Sélectionner un utilisateur</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="hidden" id="personne_id" name="personne_id">
+                    <label for="dateNaissance">Nouvelle date de naissance :</label>
+                    <input type="date" id="dateNaissance" name="nouvelle_date_naissance" required>
+                    <button type="submit">Mettre à jour</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
