@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agence de Voyage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form class="p-3" >
+                <div class="row">
+                    <fieldset id="rectangle" class="border rounded border-dark">
+                        <div class='p-1'>
+                            <div class="dropdown btn-group" role="group">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Types d'hébergements
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <div class="form-group mb-3">
+                                            <label class="form-label ms-2" for="action">En intérieur</label>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_hotel">
+                                                    <input type="checkbox" class="form-check-input" id="check_hotel" value="hotel" />
+                                                    Hotel</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_Chambre">
+                                                    <input type="checkbox" class="form-check-input" id="check_Chambre" value="Chambre" />
+                                                    Chambres d'hôtes</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_gite">
+                                                    <input type="checkbox" class="form-check-input" id="check_gite" value="gite" />
+                                                    Gîte</label>
+                                            </div>
+
+                                        </div></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><div class="form-group mb-3">
+
+                                            <label class="form-label ms-2" for="action">En plein air</label>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_tente">
+                                                    <input type="checkbox" class="form-check-input" id="check_tente" value="tente" />
+                                                    Tente</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_caravane">
+                                                    <input type="checkbox" class="form-check-input" id="check_caravane" value="caravane" />
+                                                    Caravane</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label" for="check_bungalow">
+                                                    <input type="checkbox" class="form-check-input" id="check_bungalow" value="bungalow" />
+                                                    Bungalow</label>
+                                            </div></li>
+                                </ul>
+                            </div>
+
+
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                &#128205; Localisation
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Localisation</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group mb-3">
+                                                <label for="Code">Code Postal
+                                                    <input type="text" class="form-control" id="nom" placeholder=""/>
+                                                </label>
+                                            </div>
+                                            <label for="customRange1" class="form-label">Distance (km)</label>
+                                            <input type="range" class="form-range" id="customRange1">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md">
+                                                    <span>0km</span>
+                                                </div>
+                                                <div class="col-md">
+                                                    <span>50km</span>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <span>100km</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                            <button type="button" class="btn btn-primary">Valider</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-group mt-3" role="group">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="arrivee">Arrivée
+                                        <input type="date" class="form-control" />
+                                    </span>
+                                </div>
+                                <div class="input-group mb-3 ms-1">
+                                    <span class="input-group-text" id="depart">Départ
+                                        <input type="date" class="form-control" />
+                                    </span>
+                                </div><div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Rechercher" />
+                                    <span class="input-group-text">&#128270;</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
