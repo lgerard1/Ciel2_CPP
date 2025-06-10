@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client WebSocket</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="websockets.js"></script>
+    </head>
+    <body>
+        <h1>Client WebSocket</h1>
+        <div>
+            <button id="connect">Connecter</button>
+            <button id="disconnect" disabled>Déconnecter</button>
+        </div>
+        <br/>
+        <div>
+            <textarea id="messageToSend" placeholder="Tapez votre message ici"></textarea>
+            <button id="send" disabled>Envoyer</button>
+        </div>
+        <div>
+            <h2>Messages reçus :</h2>
+            <pre id="receivedMessages"></pre>
+        </div>
+    </body>
+</html>
