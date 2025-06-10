@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Calculatrice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/fonctionsCalc.js"></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="text-center row justify-content-center">
+                <fieldset class="border border-dark col-4 p-3">
+                    <h2 class="text-center" >Calculatrice</h2>
+                    <fieldset class="border p-3">
+                        <div class="form-group mb-3">
+                            <label for="afficheur">
+
+                            </label>
+                            <input type="text" class="form-control text-end fs-3" id="afficheur" placeholder="0">
+                        </div>
+                        <div class="btn-group d-flex mb-3 " role="group">
+                            <button type="button" name="btn7" class="rounded btn btn-secondary w-25 me-1 fs-3" >7</button>
+                            <button type="button" name="btn8" class="rounded btn btn-secondary w-25 me-1 fs-3" >8</button>
+                            <button type="button" name="btn9" class="rounded btn btn-secondary w-25 me-1 fs-3" >9</button>
+                            <button type="button" class="rounded btn btn-primary w-25 me-1 fs-3" >+</button>
+                        </div>
+                        <div class="btn-group d-flex mb-3 " role="group">
+                            <button type="button" name="btn4" class="rounded btn btn-secondary w-25 me-1 fs-3" >4</button>
+                            <button type="button" name="btn5" class="rounded btn btn-secondary w-25 me-1 fs-3" >5</button>
+                            <button type="button" name="btn6" class="rounded btn btn-secondary w-25 me-1 fs-3" >6</button>
+                            <button type="button" class="rounded btn btn-primary w-25 me-1 fs-3" >-</button>
+                        </div>
+                        <div class="btn-group d-flex mb-3 " role="group">
+                            <button type="button" name="btn1" class="rounded btn btn-secondary w-25 me-1 fs-3" >1</button>
+                            <button type="button" name="btn2" class="rounded btn btn-secondary w-25 me-1 fs-3" >2</button>
+                            <button type="button" name="btn3" class="rounded btn btn-secondary w-25 me-1 fs-3" >3</button>
+                            <button type="button" class="rounded btn btn-primary w-25 me-1 fs-3" >&#215</button>
+                        </div>
+                        <div class="btn-group d-flex mb-3 " role="group">
+                            <button type="button" class="rounded btn btn-secondary w-25 me-1 fs-3" >0</button>
+                            <button type="button" class="rounded btn btn-secondary w-25 me-1 fs-3" >.</button>
+                            <button type="reset" class="rounded btn btn-danger w-25 me-1 fs-3" >AC</button>
+                            <button type="button" id="division" class="rounded btn btn-primary w-25 me-1 fs-3" >&#247;</button>
+                        </div>
+                        <button type="button" class="rounded btn btn-info w-100 fs-3" >=</button>
+                    </fieldset>
+                </fieldset>
+            </div>
+
+        </div>
+    </body>
+</html>
